@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciberseguridad</title>
+    <title>HackMark</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@
             color: #f00;
         }
         section {
-	    max-width: 1500px;
+            max-width: 1250px;
             text-align: center;
             background: rgba(0, 0, 0, 0.6);
             margin: auto;
@@ -60,29 +60,138 @@
             margin-top: 20px;
             border-top: 3px solid #0ff;
         }
+        ul {
+            list-style: none; /* Oculta los puntos de la lista */
+            padding: 0;
+            margin: 0;
+        }
+
+        .profiles-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between; /* Distribuye los botones */
+            align-items: center;
+            flex-wrap: wrap; /* Permite que los botones se acomoden en pantallas pequeñas */
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px; /* Espaciado entre botones */
+        }
+        .htb-link {
+            background: #00ff00; /* Hack The Box color */
+            color: black;
+        }
+        .linkedin-link {
+            background: #0077b5; /* LinkedIn color */
+            color: white;
+        }
+        .button i {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .htb-link:hover {
+            background: #00cc00;
+        }
+        .linkedin-link:hover {
+            background: #005b8d;
+        }
+
+        /* Media Queries - Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            header {
+                font-size: 28px; /* Reduce tamaño de fuente en pantallas pequeñas */
+            }
+            nav a {
+                font-size: 18px; /* Ajusta tamaño de los enlaces de navegación */
+            }
+            section {
+                padding: 20px;
+                max-width: 90%; /* Ajusta el tamaño del contenido */
+            }
+            .profiles-container {
+                flex-direction: column; /* Coloca los botones en columna en pantallas pequeñas */
+                justify-content: center;
+                align-items: center;
+            }
+            .button {
+                font-size: 14px;
+                width: 100%; /* Hace los botones más grandes en pantallas pequeñas */
+            }
+            .image-container img {
+                max-width: 100%; /* Hace que la imagen ocupe el ancho completo en móviles */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 24px; /* Reduce aún más el tamaño en pantallas más pequeñas */
+            }
+            nav a {
+                font-size: 16px; /* Ajusta aún más el tamaño de los enlaces de navegación */
+            }
+            section {
+                padding: 15px; /* Reduce el padding */
+            }
+            .button {
+                font-size: 12px; /* Ajusta aún más el tamaño de los botones */
+            }
+        }
     </style>
 </head>
 <body>
-    <header>Servicios de Ciberseguridad | HACKMARK</header>
+    <header>Servicios de Ciberseguridad HACKMARK</header>
     
     <nav>
         <a href="#consultoria">Consultoría</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
     </nav>
+    <br>
     
     <section id="consultoria">
         <h2>Protege tu empresa contra ciberataques</h2>
-	<p style="font-size: 25px;"><br>
-
-	En HackMark, somos especialistas en pruebas de penetración y seguridad en aplicaciones web.<br> Detectamos y explotamos vulnerabilidades antes de que los ciberatacantes las encuentren, utilizando técnicas avanzadas y metologías profesionales.<br>
-	<br> Refuerza la seguridad de tu negocio con expertos en ciberseguridad.</p>
+        <p style="font-size: 25px;"><br>
+        En HackMark, somos especialistas en pruebas de penetración y seguridad en aplicaciones web.<br> Detectamos y explotamos vulnerabilidades antes de que los ciberatacantes las encuentren, utilizando técnicas avanzadas y metodologías profesionales para proteger tus sistemas.<br><br> Refuerza la seguridad de tu negocio con expertos en ciberseguridad.</p>
         <div class="image-container">
             <img src="https://vaporvm.com/wp-content/uploads/2024/11/Building-a-Secure-Digital-Framework-Essential-Cybersecurity-Services-for-Businesses.png" alt="Ciberseguridad">
         </div>
     </section>
     <br>
     
+
+<section id="quienes_somos">
+    <h2>¿Quienes Somos?</h2>
+    <p>Consultores de Seguridad Especializados en Hacking Ofensivo, Hacking Web, Pentesting.<br> Capacitados para brindar servicios de ciberseguridad.<br>Con más de 3 años de experiencia en ejecución de auditorías a Nivel Público y Privado.<br>Contamos con varias certificaciones reconocidas en el sector de la Ciberseguridad.</p>
+    <div class="certificaciones-container">
+    <h2>Certificaciones</h2>
+    <ul>
+        <li>Certified Ethical Hacker (CEH)</li>
+        <li>Certified Ethical Hacker (CEH) - Practical</li>
+        <li>Certified Ethical Hacker (CEH) - Máster</li>
+        <li>Practical Ethical Hacking</li>
+        <li>Tenable Certified Sales Associate</li>
+        <li>Tenable Certified Sales Engineer</li>
+    </ul>
+    </div>
+</section>
+<br>
+
 <section id="servicios">
     <h2 style="font-size: 30px;">Nuestros Servicios</h2>
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
@@ -91,7 +200,7 @@
                     border-radius: 15px; text-align: center; padding: 20px; transition: 0.3s; 
                     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">
             <h3 style="color: #0ff;">Pruebas de Penetración</h3>
-            <p style="color: white;">Simulación de ataques para detectar vulnerabilidades.</p>
+            <p style="color: white;">Simulación de ataques a nivel de infraestructura para detectar vulnerabilidades.</p>
             <a href="penetration-testing.html">
                 <button style="background: #0ff; color: #000; border: none; padding: 10px 15px; 
                               font-size: 14px; border-radius: 8px; cursor: pointer; margin-top: 10px;"> 
@@ -103,9 +212,9 @@
         <div style="width: 300px; height: 250px; background: rgba(0, 255, 255, 0.2); border: 2px solid #0ff; 
                     border-radius: 15px; text-align: center; padding: 20px; transition: 0.3s; 
                     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">
-            <h3 style="color: #0ff;">Análisis de Vulnerabilidades</h3>
-            <p style="color: white;">Identificación y evaluación de fallos de seguridad.</p>
-            <a href="vulnerability-analysis.html">
+            <h3 style="color: #0ff;">Seguridad en Aplicaciones Web</h3>
+            <p style="color: white;">Protección de aplicaciones web ante ataques cibernéticos</p>
+            <a href="web-security.html">
                 <button style="background: #0ff; color: #000; border: none; padding: 10px 15px; 
                               font-size: 14px; border-radius: 8px; cursor: pointer; margin-top: 10px;"> 
                     Clic para más información 
@@ -116,9 +225,9 @@
         <div style="width: 300px; height: 250px; background: rgba(0, 255, 255, 0.2); border: 2px solid #0ff; 
                     border-radius: 15px; text-align: center; padding: 20px; transition: 0.3s; 
                     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">
-            <h3 style="color: #0ff;">Seguridad en Aplicaciones Web</h3>
-            <p style="color: white;">Protección de plicaciones Webs contra ataque ciberneticos</p>
-            <a href="web-security.html">
+            <h3 style="color: #0ff;">Análisis de Vulnerabilidades</h3>
+            <p style="color: white;">Identificación y evaluación de vulnerabilidades a nivel de red</p>
+            <a href="vulnerability-analysis.html">
                 <button style="background: #0ff; color: #000; border: none; padding: 10px 15px; 
                               font-size: 14px; border-radius: 8px; cursor: pointer; margin-top: 10px;"> 
                     Clic para más información 
@@ -129,18 +238,24 @@
     </div>
 </section>
 
-
-
-
     
     <br>
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Escríbenos a <strong>i08@gmail.com</strong> o llámanos al <strong>+123 456 7890</strong></p>
+        <div class="profiles-container">
+        <a href="https://app.hackthebox.com/profile/690538" class="button htb-link" target="_blank">
+            <i class="fas fa-user-secret"></i> Ver perfil HTB
+        </a>
+        <a href="https://www.linkedin.com/in/marcos-cruz-gervacio/" class="button linkedin-link" target="_blank">
+            <i class="fab fa-linkedin"></i> Ver perfil LinkedIn
+        </a>
+        </div>
     </section>
     
     <footer>
-        &copy; 2025 Consultora de Ciberseguridad. Todos los derechos reservados.
+        <p>&copy; 2025 HackMark - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
+
