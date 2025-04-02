@@ -3,20 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Ciberseguridad</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #007bff; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images4.alphacoders.com/135/1358905.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #0ff;
+            text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.5);
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            border-bottom: 3px solid #0ff;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+        nav a {
+            color: #0ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 23px;
+            transition: color 0.6s;
+        }
+        nav a:hover {
+            color: #f00;
+        }
+        section {
+	    max-width: 1500px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            margin: auto;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 3px solid #0ff;
+        }
     </style>
 </head>
 <body>
-    <h1>¡Hola, Mundo!</h1>
-    <p>Esta es mi primera página publicada en GitHub Pages.</p>
-    <section>
-    <h2>Nueva Sección</h2>
-    <p>Este es un nuevo contenido agregado a mi página web.</p>
+    <header>Servicios de Ciberseguridad | HACKMARK</header>
+    
+    <nav>
+        <a href="#consultoria">Consultoría</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <section id="consultoria">
+        <h2>Protege tu empresa contra ciberataques</h2>
+	<p style="font-size: 25px;"><br>
+
+	En HackMark, somos especialistas en pruebas de penetración y seguridad en aplicaciones web.<br> Detectamos y explotamos vulnerabilidades antes de que los ciberatacantes las encuentren, utilizando técnicas avanzadas y metologías profesionales.<br>
+	<br> Refuerza la seguridad de tu negocio con expertos en ciberseguridad.</p>
+        <div class="image-container">
+            <img src="https://vaporvm.com/wp-content/uploads/2024/11/Building-a-Secure-Digital-Framework-Essential-Cybersecurity-Services-for-Businesses.png" alt="Ciberseguridad">
+        </div>
+    </section>
+    <br>
+    
+<section id="servicios">
+    <h2 style="font-size: 30px;">Nuestros Servicios</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        
+        <div style="width: 300px; height: 250px; background: rgba(0, 255, 255, 0.2); border: 2px solid #0ff; 
+                    border-radius: 15px; text-align: center; padding: 20px; transition: 0.3s; 
+                    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">
+            <h3 style="color: #0ff;">Pruebas de Penetración</h3>
+            <p style="color: white;">Simulación de ataques para detectar vulnerabilidades.</p>
+            <a href="penetration-testing.html">
+                <button style="background: #0ff; color: #000; border: none; padding: 10px 15px; 
+                              font-size: 14px; border-radius: 8px; cursor: pointer; margin-top: 10px;"> 
+                    Clic para más información 
+                </button>
+            </a>
+        </div>
+
+        <div style="width: 300px; height: 250px; background: rgba(0, 255, 255, 0.2); border: 2px solid #0ff; 
+                    border-radius: 15px; text-align: center; padding: 20px; transition: 0.3s; 
+                    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">
+            <h3 style="color: #0ff;">Análisis de Vulnerabilidades</h3>
+            <p style="color: white;">Identificación y evaluación de fallos de seguridad.</p>
+            <a href="vulnerability-analysis.html">
+                <button style="background: #0ff; color: #000; border: none; padding: 10px 15px; 
+                              font-size: 14px; border-radius: 8px; cursor: pointer; margin-top: 10px;"> 
+                    Clic para más información 
+                </button>
+            </a>
+        </div>
+
+        <div style="width: 300px; height: 250px; background: rgba(0, 255, 255, 0.2); border: 2px solid #0ff; 
+                    border-radius: 15px; text-align: center; padding: 20px; transition: 0.3s; 
+                    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">
+            <h3 style="color: #0ff;">Seguridad en Aplicaciones Web</h3>
+            <p style="color: white;">Protección de apps contra ataques cibernético Para esta seccion estaremos verificando el funcionamiento de las aplicaciones web, deriviado e identificadno posibles vercotirs de ataque en las aplicaciones wes.</p>
+            <a href="web-security.html">
+                <button style="background: #0ff; color: #000; border: none; padding: 10px 15px; 
+                              font-size: 14px; border-radius: 8px; cursor: pointer; margin-top: 10px;"> 
+                    Clic para más información 
+                </button>
+            </a>
+        </div>
+
+    </div>
 </section>
 
+
+
+
+    
+    <br>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Escríbenos a <strong>i08@gmail.com</strong> o llámanos al <strong>+123 456 7890</strong></p>
+    </section>
+    
+    <footer>
+        &copy; 2025 Consultora de Ciberseguridad. Todos los derechos reservados.
+    </footer>
 </body>
 </html>
-
